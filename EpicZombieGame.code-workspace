@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "EpicZombieGame",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "C:\\UE\\Installs\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "EpicZombieGame Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGame Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGame Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGame Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Test",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Test",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGame Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Test",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Shipping",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Shipping",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGame Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGame Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGame",
+					"Win64",
+					"Shipping",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGameEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Debug",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGameEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"EpicZombieGameEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"label": "EpicZombieGameEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"EpicZombieGameEditor",
+					"Win64",
+					"Development",
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "C:\\UE\\Installs\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch EpicZombieGame (Debug)",
+				"request": "launch",
+				"program": "C:\\UEProjects\\EpicZombieGame\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "EpicZombieGame Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGame (DebugGame)",
+				"request": "launch",
+				"program": "C:\\UEProjects\\EpicZombieGame\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "EpicZombieGame Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGame (Development)",
+				"request": "launch",
+				"program": "C:\\UEProjects\\EpicZombieGame\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "EpicZombieGame Win64 Development Build",
+				"args": [
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGame (Test)",
+				"request": "launch",
+				"program": "C:\\UEProjects\\EpicZombieGame\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "EpicZombieGame Win64 Test Build",
+				"args": [
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGame (Shipping)",
+				"request": "launch",
+				"program": "C:\\UEProjects\\EpicZombieGame\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "EpicZombieGame Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGameEditor (Debug)",
+				"request": "launch",
+				"program": "C:\\UE\\Installs\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "EpicZombieGameEditor Win64 Debug Build",
+				"args": [
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject"
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGameEditor (DebugGame)",
+				"request": "launch",
+				"program": "C:\\UE\\Installs\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "EpicZombieGameEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject"
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch EpicZombieGameEditor (Development)",
+				"request": "launch",
+				"program": "C:\\UE\\Installs\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "EpicZombieGameEditor Win64 Development Build",
+				"args": [
+					"C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject"
+				],
+				"cwd": "C:\\UE\\Installs\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "C:\\UE\\Installs\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "C:\\UE\\Installs\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "C:\\UE\\Installs\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\UEProjects\\EpicZombieGame\\EpicZombieGame.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "C:\\UE\\Installs\\UE_5.3"
+			}
+		]
+	}
+}
